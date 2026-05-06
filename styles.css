@@ -11,6 +11,8 @@
   --system: #3b7a5a;
   --identity: #6b4e8a;
   --asset: #3a6b9a;
+  --display-font: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --kr-heading-font: "Noto Serif KR", serif;
   --content-font: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -106,7 +108,7 @@ a { color: inherit; }
   min-height: calc(82vh - 74px);
   display: flex;
   align-items: end;
-  padding: 5rem 0 7rem;
+  padding: 5rem 0 5.5rem;
   overflow: hidden;
 }
 
@@ -163,7 +165,7 @@ h1 {
   position: relative;
   z-index: 1;
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--display-font);
   font-size: clamp(3.2rem, 9vw, 7rem);
   font-weight: 400;
   line-height: 0.98;
@@ -257,10 +259,14 @@ h2 em {
 
 h2 {
   margin: 0;
-  font-family: var(--content-font);
+  font-family: var(--kr-heading-font);
   font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.15;
+}
+
+#work-title {
+  font-family: var(--display-font);
 }
 
 .copy-stack {
