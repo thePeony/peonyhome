@@ -1,7 +1,7 @@
 {
   "name": "매일피오니",
   "short_name": "매일피오니",
-  "description": "작업의 방향을 판단하고 혼재된 상태를 실행 가능한 구조로 다시 세웁니다.",
+  "description": "브랜드 아이덴티티, 프로덕트, 자동화, 모션까지 판단하고 설계하고 직접 만드는 1인 스튜디오.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f1e8",
