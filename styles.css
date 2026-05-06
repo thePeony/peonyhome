@@ -1,20 +1,35 @@
-cat > styles.css <<'EOF'
 :root {
   --bg: #f7f1e8;
   --paper: #fffaf3;
-  --text: #2f2825;
-  --muted: #6d625a;
-  --line: #e8ddd1;
+  --ink: #2f2825;
+  --muted: #766a62;
   --rose: #a56775;
+  --line: #e2d5c8;
 }
 
 * { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.7;
-  color: var(--text);
+  color: var(--ink);
   background: var(--bg);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 999;
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .container {
@@ -22,14 +37,22 @@ body {
   margin-inline: auto;
 }
 
-.narrow { width: min(100% - 2.5rem, 760px); }
+.narrow { max-width: 720px; }
 
 .topbar {
   position: sticky;
   top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
   backdrop-filter: blur(8px);
   background: color-mix(in srgb, var(--bg) 88%, white 12%);
-  border-bottom: 1px solid var(--line);
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .brand {
@@ -38,83 +61,137 @@ body {
   font-weight: 700;
 }
 
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.nav-list a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
 .hero {
   padding: 6rem 0 5rem;
 }
 
 .eyebrow {
   color: var(--rose);
-  margin: 0 0 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(1.85rem, 4vw, 3.1rem);
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin: 0;
 }
 
 .lead {
+  max-width: 680px;
+  margin: 1.4rem 0 0;
   color: var(--muted);
-  max-width: 62ch;
-  margin-top: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 .cta-row {
-  margin-top: 2rem;
   display: flex;
-  gap: 0.8rem;
   flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
 }
 
 .btn {
-  display: inline-block;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--rose);
   border-radius: 999px;
-  padding: 0.7rem 1.1rem;
-  font-weight: 600;
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.primary {
-  background: var(--text);
-  color: #fff;
+.btn.primary {
+  color: white;
+  background: var(--rose);
 }
 
-.ghost {
-  border: 1px solid var(--line);
-  color: var(--text);
-  background: var(--paper);
+.btn.ghost {
+  background: transparent;
 }
 
 .section {
-  padding: 4.5rem 0;
+  padding: 4rem 0;
   border-top: 1px solid var(--line);
 }
 
 h2 {
-  font-size: clamp(1.35rem, 3.5vw, 2rem);
   margin: 0;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
 }
 
 .section-intro { color: var(--muted); }
 
-.bullet-list, .number-list { padding-left: 1.2rem; }
+.bullet-list,
+.number-list { padding-left: 1.2rem; }
+
+.bullet-list li,
+.number-list li {
+  margin: 0.55rem 0;
+  line-height: 1.7;
+}
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 0.75rem;
   padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.tag {
+  color: var(--rose);
+  font-size: 0.92rem;
+  margin-top: 0.8rem;
 }
 
 .contact {
   background: color-mix(in srgb, var(--paper) 70%, white 30%);
 }
-EOF
+
+@media (max-width: 760px) {
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem 0 0.9rem;
+  }
+
+  .brand { padding-bottom: 0.2rem; }
+
+  .nav-list {
+    gap: 0.6rem;
+  }
+}
