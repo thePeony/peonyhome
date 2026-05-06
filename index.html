@@ -50,7 +50,6 @@
             <em>Build,</em><br />
             Automate.
           </h1>
-          <img class="hero-peony" src="assets/peony-hero.png" alt="" aria-hidden="true" />
         </div>
       </section>
 
@@ -172,8 +171,8 @@
           <div>
             <p class="eyebrow">About</p>
             <h2 id="about-title">
-              1인 디자인 스튜디오,<br />
-              <em>매일피오니.</em>
+              1인 디자인 스튜디오<br />
+              <em>매일피오니</em>
             </h2>
             <div class="stats" aria-label="경력">
               <div>
@@ -300,9 +299,9 @@
 
     <script>
       const ROWS = [
-        { id: "system", label: "System", dotClass: "dot-sys", tagClass: "ptag-sys" },
-        { id: "identity", label: "Identity", dotClass: "dot-id", tagClass: "ptag-id" },
-        { id: "asset", label: "Asset", dotClass: "dot-ast", tagClass: "ptag-ast" }
+        { id: "system", label: "System", tagClass: "ptag-sys" },
+        { id: "identity", label: "Identity", tagClass: "ptag-id" },
+        { id: "asset", label: "Asset", tagClass: "ptag-ast" }
       ];
       const COLS = ["automation", "brand", "product", "motion"];
       const COL_LABELS = { automation: "Automation", brand: "Brand Identity", product: "Product · App", motion: "Motion" };
@@ -328,7 +327,7 @@
         rowEl.className = "grid-row";
         const yLabel = document.createElement("div");
         yLabel.className = "y-label";
-        yLabel.innerHTML = `<div class="y-label-inner"><span class="y-dot ${row.dotClass}"></span>${row.label}</div>`;
+        yLabel.innerHTML = `<div class="y-label-inner">${row.label}</div>`;
         rowEl.appendChild(yLabel);
         COLS.forEach((col) => {
           const key = `${row.id}-${col}`;

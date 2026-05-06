@@ -112,35 +112,23 @@ a { color: inherit; }
 
 .hero-inner {
   position: relative;
+  z-index: 0;
 }
 
 .hero-inner::after {
   content: "";
   position: absolute;
-  right: 3%;
-  top: -18%;
-  width: min(36vw, 420px);
-  aspect-ratio: 1;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background:
-    linear-gradient(90deg, transparent 49.5%, color-mix(in srgb, var(--accent) 20%, transparent) 50%, transparent 50.5%),
-    linear-gradient(0deg, transparent 49.5%, color-mix(in srgb, var(--accent) 20%, transparent) 50%, transparent 50.5%),
-    var(--paper);
-  opacity: 0.72;
-  z-index: -1;
-}
-
-.hero-peony {
-  position: absolute;
   right: clamp(-2rem, 4vw, 3rem);
   bottom: -5.5rem;
-  z-index: -1;
   width: min(45vw, 520px);
   min-width: 280px;
-  height: auto;
-  opacity: 0.92;
+  aspect-ratio: 556 / 247;
+  background:
+    linear-gradient(to bottom, color-mix(in srgb, var(--paper) 10%, transparent), transparent 42%),
+    url("assets/peony-hero.png") center / contain no-repeat;
+  opacity: 0.88;
   pointer-events: none;
+  z-index: 0;
 }
 
 .eyebrow {
@@ -169,6 +157,8 @@ button {
 }
 
 h1 {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3.2rem, 9vw, 7rem);
@@ -325,7 +315,28 @@ h2 {
 
 .reason-card span,
 .reference-list span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  line-height: 1;
+}
+
+.reference-list span {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
   color: var(--accent);
+  line-height: inherit;
+}
+
+.reason-card span,
+.reference-list span {
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -409,17 +420,6 @@ h2 {
   word-break: normal;
 }
 
-.y-dot {
-  display: block;
-  width: 6px;
-  height: 6px;
-  margin: 0 0 0.45rem auto;
-}
-
-.dot-sys { background: var(--system); }
-.dot-id { background: var(--identity); }
-.dot-ast { background: var(--asset); }
-
 .cell {
   display: flex;
   min-height: 185px;
@@ -458,11 +458,19 @@ h2 {
 }
 
 .cell-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: auto;
-  color: var(--accent);
+  width: 100%;
+  min-height: 38px;
+  background: var(--accent);
+  color: #fff;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  padding: 0.55rem 0.75rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -546,7 +554,7 @@ h2 {
   display: grid;
   grid-template-columns: 150px minmax(220px, 0.65fr) minmax(0, 1fr);
   gap: 1.4rem;
-  align-items: baseline;
+  align-items: center;
   border-bottom: 1px solid var(--line);
   padding: 1rem 0;
 }
@@ -939,12 +947,6 @@ h2 {
   }
 
   .hero-inner::after {
-    width: 240px;
-    top: -2rem;
-    right: -4rem;
-  }
-
-  .hero-peony {
     right: -5rem;
     bottom: -3.6rem;
     width: 82vw;
