@@ -552,6 +552,19 @@ h2 {
   text-wrap: pretty;
 }
 
+.open-reference {
+  display: block;
+  width: fit-content;
+  margin-top: 0.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.open-reference:hover {
+  text-decoration: underline;
+}
+
 .stats {
   display: flex;
   gap: 1rem;
