@@ -175,7 +175,14 @@ h1 {
 h1 em,
 h2 em {
   color: var(--accent);
+}
+
+h1 em {
   font-style: italic;
+}
+
+h2 em {
+  font-style: normal;
 }
 
 .lead {
@@ -262,6 +269,7 @@ h2 {
   font-family: var(--kr-heading-font);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 400;
+  letter-spacing: 0;
   line-height: 1.15;
 }
 
@@ -467,20 +475,22 @@ h2 {
 }
 
 .cell-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex;
   margin-top: auto;
-  width: 100%;
-  min-height: 38px;
-  background: var(--accent);
-  color: #fff;
+  width: fit-content;
+  color: var(--accent);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  padding: 0.55rem 0.75rem;
-  text-align: center;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid transparent;
   text-transform: uppercase;
+}
+
+.cell:hover .cell-cta,
+.cell:focus-visible .cell-cta,
+.cell.active .cell-cta {
+  border-color: currentColor;
 }
 
 .service-grid {
