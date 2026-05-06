@@ -97,150 +97,78 @@
             <p class="section-note">System · Identity · Asset 기준으로 작업을 나눠 봅니다.</p>
           </div>
 
-          <div class="service-grid">
-            <article class="service-card system">
-              <p class="service-kicker">System · Automation</p>
-              <h3>자동화 구조 설계</h3>
-              <p>반복 작업이 쌓이는데 뭘 자동화해야 할지 판단이 안 될 때.</p>
-              <ul>
-                <li>자동화할 흐름과 사람이 판단할 지점 구분</li>
-                <li>툴 연결, 예외 상황, AI 배치 기준 설계</li>
-              </ul>
-              <p class="result">사람이 판단에만 집중하는 구조.</p>
-              <p class="price">협의</p>
-            </article>
+          <div class="work-matrix" aria-label="작업 영역 표">
+            <div class="matrix-corner" aria-hidden="true">Scope</div>
+            <div class="matrix-axis">Automation</div>
+            <div class="matrix-axis">Brand Identity</div>
+            <div class="matrix-axis">Product / App</div>
+            <div class="matrix-axis">Motion</div>
 
-            <article class="service-card system">
-              <p class="service-kicker">System · Brand Identity</p>
-              <h3>브랜드 시스템</h3>
-              <p>브랜드가 있는데 적용할 때마다 달라질 때.</p>
-              <ul>
-                <li>규칙과 유연성의 범위 결정</li>
-                <li>실제로 지켜질 수 있는 기준 정리</li>
-              </ul>
-              <p class="result">누가 써도 같은 브랜드로 읽히는 시스템.</p>
-              <p class="price">₩3,000,000~</p>
-            </article>
+            <div class="matrix-row-label system"><span></span>System</div>
+            <button class="matrix-cell" type="button" data-key="system-automation">
+              <strong>자동화 구조 설계</strong>
+              <span>반복 작업을 없애는 흐름 설계</span>
+              <em>협의</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="system-brand">
+              <strong>브랜드 시스템</strong>
+              <span>누가 써도 같아 보이는 기준 설계</span>
+              <em>₩3,000,000~</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="system-product">
+              <strong>제품 디자인 시스템</strong>
+              <span>확장될수록 일관되는 제품 구조</span>
+              <em>₩4,000,000~</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="system-motion">
+              <strong>모션 시스템</strong>
+              <span>브랜드 언어가 되는 모션 원칙</span>
+              <em>협의</em>
+            </button>
 
-            <article class="service-card system">
-              <p class="service-kicker">System · Product / App</p>
-              <h3>제품 디자인 시스템</h3>
-              <p>기능을 추가할수록 화면과 UX가 복잡해질 때.</p>
-              <ul>
-                <li>컴포넌트, 토큰, 네이밍 체계</li>
-                <li>인터랙션 원칙과 핸드오프 기준</li>
-              </ul>
-              <p class="result">속도를 잃지 않고 확장 가능한 제품.</p>
-              <p class="price">₩4,000,000~</p>
-            </article>
+            <div class="matrix-row-label identity"><span></span>Identity</div>
+            <button class="matrix-cell" type="button" data-key="identity-automation">
+              <strong>자동화 × 브랜드 정합</strong>
+              <span>자동화 산출물도 브랜드답게</span>
+              <em>협의</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="identity-brand">
+              <strong>브랜드 아이덴티티</strong>
+              <span>한 번에 읽히는 브랜드를 만든다</span>
+              <em>₩5,000,000~</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="identity-product">
+              <strong>제품 아이덴티티</strong>
+              <span>기능 너머로 읽히는 제품의 태도</span>
+              <em>₩4,000,000~</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="identity-motion">
+              <strong>브랜드 모션</strong>
+              <span>정지 화면보다 더 많은 것을 말하는</span>
+              <em>협의</em>
+            </button>
 
-            <article class="service-card system">
-              <p class="service-kicker">System · Motion</p>
-              <h3>모션 시스템</h3>
-              <p>애니메이션이 매번 감각에 의존하고 중구난방일 때.</p>
-              <ul>
-                <li>속도, 이징, 딜레이 기준값</li>
-                <li>장식과 의미 있는 모션의 구분</li>
-              </ul>
-              <p class="result">모션이 브랜드 언어가 되는 구조.</p>
-              <p class="price">협의</p>
-            </article>
-
-            <article class="service-card identity">
-              <p class="service-kicker">Identity · Automation</p>
-              <h3>자동화 × 브랜드 정합</h3>
-              <p>자동화된 리포트, 이메일, 문서가 브랜드처럼 보이지 않을 때.</p>
-              <ul>
-                <li>자동화 안에서 유지해야 할 브랜드 기준</li>
-                <li>템플릿과 변수, 톤의 경계 설정</li>
-              </ul>
-              <p class="result">규모가 커져도 브랜드가 유지되는 자동화.</p>
-              <p class="price">협의</p>
-            </article>
-
-            <article class="service-card identity">
-              <p class="service-kicker">Identity · Brand Identity</p>
-              <h3>브랜드 아이덴티티</h3>
-              <p>브랜드가 없거나, 있는데 회사를 대표하지 못할 때.</p>
-              <ul>
-                <li>무엇을 버리고 무엇을 가져갈지 결정</li>
-                <li>로고, 컬러, 타이포, 톤의 관계 정리</li>
-              </ul>
-              <p class="result">보는 사람이 한 번에 읽는 브랜드.</p>
-              <p class="price">₩5,000,000~</p>
-            </article>
-
-            <article class="service-card identity">
-              <p class="service-kicker">Identity · Product / App</p>
-              <h3>제품 아이덴티티</h3>
-              <p>기능은 있는데 제품처럼 느껴지지 않을 때.</p>
-              <ul>
-                <li>제품의 성격과 인터랙션 언어 정의</li>
-                <li>타이포, 컬러, 간격이 만드는 태도 정리</li>
-              </ul>
-              <p class="result">쓸수록 정체성이 선명해지는 UX.</p>
-              <p class="price">₩4,000,000~</p>
-            </article>
-
-            <article class="service-card identity">
-              <p class="service-kicker">Identity · Motion</p>
-              <h3>브랜드 모션</h3>
-              <p>정적인 브랜드를 움직임으로 확장해야 할 때.</p>
-              <ul>
-                <li>무엇을 움직이고 무엇을 가만히 둘지 결정</li>
-                <li>리듬, 루프, 트랜지션의 관계 설계</li>
-              </ul>
-              <p class="result">플랫폼을 가로질러 같은 감도의 모션.</p>
-              <p class="price">협의</p>
-            </article>
-
-            <article class="service-card asset">
-              <p class="service-kicker">Asset · Automation</p>
-              <h3>자동화 산출물</h3>
-              <p>정기 리포트, 알림, 문서를 매번 수작업으로 만들 때.</p>
-              <ul>
-                <li>데이터가 나와야 하는 형태 설계</li>
-                <li>트리거, 스케줄, 조건 정리</li>
-              </ul>
-              <p class="result">만드는 시간이 없어지는 산출물.</p>
-              <p class="price">협의</p>
-            </article>
-
-            <article class="service-card asset">
-              <p class="service-kicker">Asset · Brand Identity</p>
-              <h3>브랜드 자산</h3>
-              <p>브랜드는 확정됐지만 바로 쓸 수 있는 파일이 없을 때.</p>
-              <ul>
-                <li>팀이 쓰는 포맷과 응용 규칙 결정</li>
-                <li>업데이트 가능성을 반영한 파일 구조</li>
-              </ul>
-              <p class="result">팀이 바로 꺼내 쓰는 브랜드 패키지.</p>
-              <p class="price">₩2,000,000~</p>
-            </article>
-
-            <article class="service-card asset">
-              <p class="service-kicker">Asset · Product / App</p>
-              <h3>제품 · 코드</h3>
-              <p>작동하는 프로토타입이나 코드베이스가 필요할 때.</p>
-              <ul>
-                <li>스택과 유지보수 가능한 코드 구조 결정</li>
-                <li>디자인과 코드가 일치하는 구현</li>
-              </ul>
-              <p class="result">넘겨받아서 바로 운영할 수 있는 제품.</p>
-              <p class="price">협의</p>
-            </article>
-
-            <article class="service-card asset">
-              <p class="service-kicker">Asset · Motion</p>
-              <h3>모션 자산</h3>
-              <p>소셜 콘텐츠, UI 애니메이션, 모션 그래픽 단품이 필요할 때.</p>
-              <ul>
-                <li>포맷, 길이, 비율과 감도 결정</li>
-                <li>루프 가능 여부와 무음 상태 설계</li>
-              </ul>
-              <p class="result">플랫폼에서 시선이 멈추는 모션.</p>
-              <p class="price">협의</p>
-            </article>
+            <div class="matrix-row-label asset"><span></span>Asset</div>
+            <button class="matrix-cell" type="button" data-key="asset-automation">
+              <strong>자동화 산출물</strong>
+              <span>만드는 시간 자체를 없앤다</span>
+              <em>협의</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="asset-brand">
+              <strong>브랜드 자산</strong>
+              <span>바로 쓸 수 있는 브랜드 패키지</span>
+              <em>₩2,000,000~</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="asset-product">
+              <strong>제품 · 코드</strong>
+              <span>넘겨받아서 바로 쓸 수 있는 제품</span>
+              <em>협의</em>
+            </button>
+            <button class="matrix-cell" type="button" data-key="asset-motion">
+              <strong>모션 자산</strong>
+              <span>플랫폼에서 멈추게 만드는 모션</span>
+              <em>협의</em>
+            </button>
           </div>
         </div>
       </section>
@@ -294,18 +222,19 @@
             <p class="section-intro">새 프로젝트든, 협업 제안이든 편하게 연락주세요.</p>
           </div>
           <div class="contact-panel">
-            <form class="contact-form" action="mailto:everydaypeony@gmail.com" method="post" enctype="text/plain">
+            <div class="form-wrap" id="formWrap">
+            <form class="contact-form" id="contactForm">
               <label>
                 이름 / Name
-                <input type="text" name="name" placeholder="홍길동" required />
+                <input type="text" id="name" name="name" placeholder="홍길동" required />
               </label>
               <label>
                 이메일 / Email
-                <input type="email" name="email" placeholder="hello@example.com" required />
+                <input type="email" id="email" name="email" placeholder="hello@example.com" required />
               </label>
               <label>
                 문의 유형 / Type
-                <select name="type">
+                <select id="type" name="type">
                   <option value="">선택해주세요</option>
                   <option>브랜드 아이덴티티</option>
                   <option>프로덕트 / 앱 개발</option>
@@ -317,10 +246,15 @@
               </label>
               <label>
                 내용 / Message
-                <textarea name="message" rows="5" placeholder="프로젝트 개요, 예산, 일정 등을 간략히 알려주세요." required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="프로젝트 개요, 예산, 일정 등을 간략히 알려주세요." required></textarea>
               </label>
               <button class="btn primary" type="submit">보내기</button>
             </form>
+            <div class="form-done" id="formDone" aria-live="polite">
+              <strong>받았습니다.</strong>
+              <p>메일 앱으로 내용을 넘길게요. 곧 연락 드리겠습니다.</p>
+            </div>
+            </div>
             <div class="contact-info">
               <p><span>Email</span><a href="mailto:everydaypeony@gmail.com">everydaypeony@gmail.com</a></p>
               <p><span>Location</span>Seoul, Korea</p>
@@ -342,5 +276,211 @@
         <p>© 2026 Everyday Peony · Seoul, KR</p>
       </div>
     </footer>
+
+    <div class="work-overlay" id="workOverlay" aria-hidden="true">
+      <section class="work-panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+        <header class="panel-header">
+          <div>
+            <p class="panel-tags" id="panelTags"></p>
+            <h2 id="panelTitle"></h2>
+          </div>
+          <button class="panel-close" type="button" aria-label="상세 패널 닫기">×</button>
+        </header>
+        <div class="panel-body">
+          <div>
+            <p class="panel-label">어떤 상황에서 의뢰하는가</p>
+            <p id="panelWhen"></p>
+          </div>
+          <div>
+            <p class="panel-label">내가 결정하는 것</p>
+            <ul id="panelDecides"></ul>
+          </div>
+          <div>
+            <p class="panel-label">결과로 무엇이 달라지는가</p>
+            <p id="panelOutcome"></p>
+          </div>
+        </div>
+        <footer class="panel-footer">
+          <div>
+            <p class="panel-label">가격 기준</p>
+            <strong id="panelPrice"></strong>
+            <span id="panelPriceNote"></span>
+          </div>
+          <a class="btn primary" href="#contact" id="panelCta">문의하기</a>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      const services = {
+        "system-automation": {
+          tags: "System / Automation",
+          title: "자동화 구조 설계",
+          when: "반복 작업이 쌓이는데 뭘 자동화해야 할지 판단이 안 설 때. 도구는 있는데 연결이 안 되거나, 자동화가 오히려 복잡해지고 있을 때.",
+          decides: ["어떤 흐름을 자동화할 것인가, 어떤 것은 사람이 해야 하는가", "어떤 툴을 어떻게 연결할 것인가", "예외 상황을 어떻게 설계에 넣을 것인가", "AI를 어느 지점에 배치할 것인가"],
+          outcome: "사람이 판단에만 집중하는 구조. 자동화가 확장될수록 더 가벼워지는 시스템.",
+          price: "협의",
+          note: "규모와 복잡도에 따라 상이 / 초기 진단 무료"
+        },
+        "system-brand": {
+          tags: "System / Brand Identity",
+          title: "브랜드 시스템",
+          when: "브랜드가 있는데 적용할 때마다 달라질 때. 팀이 커졌거나 채널이 늘었는데 일관성 유지가 안 될 때.",
+          decides: ["규칙을 어디까지 정할 것인가, 어디서 유연성을 줄 것인가", "어떤 규칙이 실제로 지켜질 수 있는 규칙인가", "예외를 허용할 조건과 허용하지 않을 조건"],
+          outcome: "누가 써도 같은 브랜드로 읽히는 시스템. 가이드라인이 아니라 실제로 작동하는 기준.",
+          price: "₩3,000,000~",
+          note: "브랜드 복잡도 / 채널 수에 따라 조율"
+        },
+        "system-product": {
+          tags: "System / Product · App",
+          title: "제품 디자인 시스템",
+          when: "제품은 있는데 화면마다 UX가 다를 때. 기능을 추가할수록 복잡해지고, 디자인-개발 간 기준이 없을 때.",
+          decides: ["컴포넌트를 어떻게 나눌 것인가", "디자인 토큰 구조와 네이밍 체계", "인터랙션 원칙과 상태 설계", "디자이너-개발자 간 핸드오프 기준"],
+          outcome: "속도를 잃지 않고 확장 가능한 제품. 새 기능이 생겨도 제품처럼 보이는 구조.",
+          price: "₩4,000,000~",
+          note: "시스템 범위에 따라 조율"
+        },
+        "system-motion": {
+          tags: "System / Motion",
+          title: "모션 시스템",
+          when: "애니메이션이 있는데 중구난방일 때. 제품이나 브랜드에 모션 원칙이 없어서 매번 감각에 의존할 때.",
+          decides: ["속도, 이징, 딜레이의 기준값", "어떤 모션이 의미를 갖고 어떤 건 장식인가", "인터랙션과 전환의 위계"],
+          outcome: "모션이 브랜드 언어가 되는 구조. 누가 만들어도 같은 감도.",
+          price: "협의",
+          note: "제품 / 브랜드 범위 따라 상이"
+        },
+        "identity-automation": {
+          tags: "Identity / Automation",
+          title: "자동화 × 브랜드 정합",
+          when: "자동화된 리포트, 이메일, 문서 등이 브랜드처럼 보이지 않을 때. 규모가 커질수록 브랜드가 희석될 때.",
+          decides: ["자동화 흐름 안에서 어떤 요소가 브랜드 기준을 유지해야 하는가", "템플릿과 변수의 경계", "자동화가 넘어서면 안 되는 톤의 선"],
+          outcome: "규모가 커져도 브랜드가 유지되는 자동화. 산출물이 많아질수록 오히려 일관해지는 구조.",
+          price: "협의",
+          note: "자동화 범위 + 브랜드 복잡도 연동"
+        },
+        "identity-brand": {
+          tags: "Identity / Brand Identity",
+          title: "브랜드 아이덴티티",
+          when: "브랜드가 없거나, 있는데 회사를 대표하지 못할 때. 리브랜딩이 필요한데 무엇을 버리고 무엇을 남길지 모를 때.",
+          decides: ["무엇을 버리고 무엇을 가져갈 것인가", "어떤 언어로 말할 것인가 - 시각과 언어 동시에", "로고, 컬러, 타이포, 톤의 관계와 위계"],
+          outcome: "보는 사람이 한 번에 읽히는 브랜드. 설명 없이 포지션이 전달되는 아이덴티티.",
+          price: "₩5,000,000~",
+          note: "로고 단품 별도 협의 가능"
+        },
+        "identity-product": {
+          tags: "Identity / Product · App",
+          title: "제품 아이덴티티",
+          when: "기능은 있는데 제품처럼 느껴지지 않을 때. 경쟁 제품과 달라 보여야 하는데 어떻게 달라야 할지 모를 때.",
+          decides: ["이 제품의 성격을 무엇으로 정의할 것인가", "인터랙션 언어와 피드백 방식", "타이포그래피, 컬러, 간격이 만드는 제품의 태도"],
+          outcome: "기능 너머로 읽히는 제품의 성격. 쓸수록 정체성이 선명해지는 UX.",
+          price: "₩4,000,000~",
+          note: "제품 범위와 플랫폼 수에 따라 조율"
+        },
+        "identity-motion": {
+          tags: "Identity / Motion",
+          title: "브랜드 모션",
+          when: "브랜드 런칭, 영상 자산, 모션 릴이 필요할 때. 정적인 브랜드를 움직임으로 확장해야 할 때.",
+          decides: ["무엇을 움직일 것인가, 무엇을 가만히 둘 것인가", "브랜드 에너지를 어떤 리듬으로 표현할 것인가", "루프, 트랜지션, 사운드와의 관계"],
+          outcome: "정지 화면보다 더 많은 것을 말하는 브랜드 모션. 플랫폼을 가로질러 같은 감도.",
+          price: "협의",
+          note: "길이, 복잡도, 플랫폼 수 기준"
+        },
+        "asset-automation": {
+          tags: "Asset / Automation",
+          title: "자동화 산출물",
+          when: "정기 리포트, 알림, 문서 등을 반복해서 만들고 있을 때. 데이터는 있는데 매번 수작업으로 형태를 만들 때.",
+          decides: ["어떤 데이터가 어떤 형태로 나와야 하는가", "자동화할 것과 사람이 마무리할 것의 경계", "트리거, 스케줄, 조건 설계"],
+          outcome: "만드는 시간이 없어지는 산출물. 데이터가 쌓일수록 자산이 되는 구조.",
+          price: "협의",
+          note: "복잡도와 연동 수에 따라 상이"
+        },
+        "asset-brand": {
+          tags: "Asset / Brand Identity",
+          title: "브랜드 자산",
+          when: "브랜드가 확정됐는데 실제로 쓸 수 있는 파일이 없을 때. 마케팅, 콘텐츠, 제품팀이 각자 만들고 있을 때.",
+          decides: ["어디까지 만들고 어디서부터 응용 규칙을 줄 것인가", "어떤 포맷으로 어떤 팀이 쓰는가", "업데이트 가능성을 어떻게 설계에 반영하는가"],
+          outcome: "팀이 바로 꺼내 쓸 수 있는 브랜드 자산. 만들면서 브랜드 기준이 생기는 패키지.",
+          price: "₩2,000,000~",
+          note: "자산 종류와 수량 기준 조율"
+        },
+        "asset-product": {
+          tags: "Asset / Product · App",
+          title: "제품 · 코드",
+          when: "실제로 작동하는 프로토타입이나 코드베이스가 필요할 때. 디자인만 있고 구현이 막혀 있을 때.",
+          decides: ["어떤 스택으로, 어떤 구조로 만들 것인가", "넘겨준 후 유지보수 가능한 코드 기준", "무엇을 직접 만들고 무엇을 라이브러리로 해결하는가"],
+          outcome: "실제로 작동하고, 넘겨받아서 바로 운영할 수 있는 제품. 디자인과 코드가 일치하는 결과물.",
+          price: "협의",
+          note: "스택, 규모, 기간 기준 별도 산정"
+        },
+        "asset-motion": {
+          tags: "Asset / Motion",
+          title: "모션 자산",
+          when: "소셜 콘텐츠, UI 애니메이션, 모션 그래픽 단품이 필요할 때. 반복 생산이 필요한 움직이는 콘텐츠.",
+          decides: ["어떤 포맷, 길이, 비율로 만들 것인가", "어떤 감도와 속도가 이 브랜드/제품에 맞는가", "루프 가능 여부와 무음 상태 설계"],
+          outcome: "플랫폼에서 시선이 멈추는 모션. 재생 안 해도 읽히고, 재생하면 더 잘 읽히는 자산.",
+          price: "협의",
+          note: "수량, 플랫폼, 납기 기준"
+        }
+      };
+
+      const overlay = document.getElementById("workOverlay");
+      const closeButton = document.querySelector(".panel-close");
+      const panelCta = document.getElementById("panelCta");
+      let activeCell = null;
+
+      function openPanel(key) {
+        const item = services[key];
+        if (!item) return;
+        document.getElementById("panelTags").textContent = item.tags;
+        document.getElementById("panelTitle").textContent = item.title;
+        document.getElementById("panelWhen").textContent = item.when;
+        document.getElementById("panelDecides").innerHTML = item.decides.map((text) => `<li>${text}</li>`).join("");
+        document.getElementById("panelOutcome").textContent = item.outcome;
+        document.getElementById("panelPrice").textContent = item.price;
+        document.getElementById("panelPriceNote").textContent = item.note;
+        activeCell?.classList.remove("active");
+        activeCell = document.querySelector(`[data-key="${key}"]`);
+        activeCell?.classList.add("active");
+        overlay.classList.add("open");
+        overlay.setAttribute("aria-hidden", "false");
+        document.body.classList.add("no-scroll");
+      }
+
+      function closePanel() {
+        overlay.classList.remove("open");
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("no-scroll");
+        activeCell?.classList.remove("active");
+        activeCell = null;
+      }
+
+      document.querySelectorAll(".matrix-cell").forEach((cell) => {
+        cell.addEventListener("click", () => openPanel(cell.dataset.key));
+      });
+
+      closeButton.addEventListener("click", closePanel);
+      panelCta.addEventListener("click", closePanel);
+      overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) closePanel();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closePanel();
+      });
+
+      document.getElementById("contactForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const type = document.getElementById("type").value || "문의";
+        const message = document.getElementById("message").value;
+        const subject = encodeURIComponent(`[매일피오니 문의] ${type}`);
+        const body = encodeURIComponent(`이름: ${name}\n이메일: ${email}\n유형: ${type}\n\n${message}`);
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("formDone").classList.add("show");
+        window.setTimeout(() => {
+          window.location.href = `mailto:everydaypeony@gmail.com?subject=${subject}&body=${body}`;
+        }, 600);
+      });
+    </script>
   </body>
 </html>
