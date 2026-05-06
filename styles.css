@@ -6,11 +6,12 @@
   --body: #38322c;
   --muted: #7a7268;
   --soft: #b8b0a6;
-  --accent: #8c4a28;
+  --accent: #fe4262;
   --line: #e3ded6;
   --system: #3b7a5a;
   --identity: #6b4e8a;
   --asset: #3a6b9a;
+  --content-font: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -21,8 +22,10 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--bg);
-  font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--content-font);
   line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 a { color: inherit; }
@@ -79,6 +82,7 @@ a { color: inherit; }
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  word-break: normal;
 }
 
 .nav-list {
@@ -99,10 +103,10 @@ a { color: inherit; }
 .nav-list a:hover { color: var(--accent); }
 
 .hero {
-  min-height: calc(100vh - 74px);
+  min-height: calc(82vh - 74px);
   display: flex;
   align-items: end;
-  padding: 5rem 0 4.5rem;
+  padding: 5rem 0 5.5rem;
   overflow: hidden;
 }
 
@@ -139,8 +143,17 @@ a { color: inherit; }
 h1,
 h2,
 h3,
-p {
-  overflow-wrap: anywhere;
+p,
+li,
+a,
+span,
+label,
+input,
+select,
+textarea,
+button {
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 h1 {
@@ -149,6 +162,7 @@ h1 {
   font-size: clamp(3.2rem, 9vw, 7rem);
   font-weight: 400;
   line-height: 0.98;
+  word-break: normal;
 }
 
 h1 em,
@@ -179,6 +193,7 @@ h2 em {
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  word-break: normal;
 }
 
 .cta-row {
@@ -237,9 +252,9 @@ h2 em {
 
 h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--content-font);
   font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.15;
 }
 
@@ -292,6 +307,7 @@ h2 {
   padding: 0 0.7rem 0.8rem;
   text-align: center;
   text-transform: uppercase;
+  word-break: normal;
 }
 
 .x-label-accent {
@@ -337,6 +353,7 @@ h2 {
   line-height: 1.5;
   text-align: right;
   text-transform: uppercase;
+  word-break: normal;
 }
 
 .y-dot {
@@ -372,9 +389,11 @@ h2 {
 }
 
 .cell-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--content-font);
   font-size: 1.2rem;
+  font-weight: 700;
   line-height: 1.3;
+  text-wrap: pretty;
 }
 
 .cell-desc {
@@ -382,6 +401,7 @@ h2 {
   color: var(--muted);
   font-size: 0.93rem;
   line-height: 1.55;
+  text-wrap: pretty;
 }
 
 .cell-cta {
@@ -474,9 +494,9 @@ h2 {
 
 .stats strong {
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--content-font);
   font-size: 2.3rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .stats span {
@@ -505,6 +525,8 @@ h2 {
 
 .skill-list strong {
   font-weight: 700;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 .contact {
@@ -585,8 +607,9 @@ h2 {
 }
 
 .done-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--content-font);
   font-size: 2rem;
+  font-weight: 700;
   line-height: 1.2;
   margin-top: 0.5rem;
 }
@@ -609,6 +632,7 @@ h2 {
   padding: 0.85rem 0;
   border-bottom: 1px solid var(--line);
   color: var(--body);
+  overflow-wrap: anywhere;
 }
 
 .contact-info span {
@@ -694,8 +718,9 @@ h2 {
 .ptag-col { color: var(--accent); }
 
 .panel-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--content-font);
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -800,7 +825,7 @@ h2 {
 
   .hero {
     min-height: auto;
-    padding: 4rem 0;
+    padding: 4.5rem 0 4rem;
   }
 
   .hero-inner::after {
@@ -811,6 +836,22 @@ h2 {
 
   .section {
     padding: 3.5rem 0;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 18vw, 5.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 9vw, 2.6rem);
+  }
+
+  .copy-stack,
+  .section-intro,
+  .section-note,
+  .panel-sec-text,
+  .d-list {
+    line-height: 1.65;
   }
 
   .section-head,
