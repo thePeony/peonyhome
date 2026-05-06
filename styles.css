@@ -131,6 +131,18 @@ a { color: inherit; }
   z-index: -1;
 }
 
+.hero-peony {
+  position: absolute;
+  right: clamp(-2rem, 4vw, 3rem);
+  bottom: -5.5rem;
+  z-index: -1;
+  width: min(45vw, 520px);
+  min-width: 280px;
+  height: auto;
+  opacity: 0.92;
+  pointer-events: none;
+}
+
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--accent);
@@ -541,7 +553,7 @@ h2 {
 
 .reference-list h3 {
   margin: 0;
-  font-size: clamp(1.25rem, 2.4vw, 1.9rem);
+  font-size: clamp(1.25rem, 1.8vw, 1.4rem);
   line-height: 1.25;
 }
 
@@ -930,6 +942,14 @@ h2 {
     width: 240px;
     top: -2rem;
     right: -4rem;
+  }
+
+  .hero-peony {
+    right: -5rem;
+    bottom: -3.6rem;
+    width: 82vw;
+    min-width: 0;
+    opacity: 0.8;
   }
 
   .section {
