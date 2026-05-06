@@ -1,7 +1,7 @@
 {
   "name": "매일피오니",
   "short_name": "매일피오니",
-  "description": "브랜드 아이덴티티, 프로덕트, 자동화, 모션까지 판단하고 설계하고 직접 만드는 1인 스튜디오.",
+  "description": "섬세하고 정확하게 디자인하고, 퍼블리싱하고, 기능을 개발하고, 업무를 자동화하는 디자인 개발 컴퍼니.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f1e8",
