@@ -971,7 +971,7 @@ h2 {
 
   .hero-inner::after {
     right: -8rem;
-    bottom: -4.5rem;
+    bottom: -5.25rem;
     width: 112vw;
     min-width: 360px;
     opacity: 0.42;
