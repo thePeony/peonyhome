@@ -53,6 +53,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+KR:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
     <style>
 :root {
   --bg: #f7f4ef;
@@ -685,11 +687,13 @@ h2 {
 .reference-thumb {
   position: relative;
   overflow: hidden;
-  min-height: 74px;
+  min-height: 88px;
   border: 1px solid var(--line);
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), transparent 42%),
     var(--paper);
+  background-position: center;
+  background-size: cover;
 }
 
 .reference-thumb::before,
@@ -707,18 +711,12 @@ h2 {
 }
 
 .ref-brand {
-  background:
-    linear-gradient(90deg, var(--ink) 0 25%, transparent 25%),
-    linear-gradient(135deg, rgba(254, 66, 98, 0.16), rgba(247, 241, 232, 0.72)),
-    var(--paper);
+  background-image: url("https://raw.githubusercontent.com/thePeony/peonyhome/main/assets/reference-lorica.jpg");
 }
 
-.ref-brand::before {
-  border: 1px solid rgba(26, 23, 20, 0.22);
-  background:
-    linear-gradient(var(--accent) 0 0) 12px 12px / 42px 6px no-repeat,
-    linear-gradient(var(--ink) 0 0) 12px 28px / 74px 3px no-repeat,
-    linear-gradient(var(--ink) 0 0) 12px 39px / 50px 3px no-repeat;
+.ref-brand::before,
+.ref-brand::after {
+  display: none;
 }
 
 .ref-elearning {
@@ -754,19 +752,12 @@ h2 {
 }
 
 .ref-product {
-  background:
-    linear-gradient(135deg, rgba(254, 66, 98, 0.14), rgba(26, 23, 20, 0.06)),
-    var(--paper);
+  background-image: url("https://raw.githubusercontent.com/thePeony/peonyhome/main/assets/reference-quote-generator.jpg");
 }
 
-.ref-product::before {
-  border: 1px solid rgba(26, 23, 20, 0.22);
-  border-radius: 2px;
-  background:
-    linear-gradient(var(--ink) 0 0) 10px 12px / 72px 5px no-repeat,
-    linear-gradient(rgba(26, 23, 20, 0.2) 0 0) 10px 29px / 96px 4px no-repeat,
-    linear-gradient(rgba(26, 23, 20, 0.2) 0 0) 10px 42px / 62px 4px no-repeat,
-    linear-gradient(var(--accent) 0 0) right 12px bottom 12px / 42px 16px no-repeat;
+.ref-product::before,
+.ref-product::after {
+  display: none;
 }
 
 .ref-motion {
@@ -1250,9 +1241,9 @@ h2 {
 }
 
 </style>
-  <!-- tistory upload marker 2026-07-03 15:36 KST -->
   </head>
   <body>
+  <!-- tistory upload marker 2026-07-03 16:20 KST -->
     <a class="skip-link" href="#content">본문으로 건너뛰기</a>
 
     <header class="topbar" aria-label="사이트 헤더">
@@ -1421,7 +1412,7 @@ h2 {
               </p>
               <div class="reference-proof">
                 <div class="reference-thumb ref-product" aria-hidden="true"></div>
-                <p class="reference-result">디자인과 코드가 이어지는 실행 가능한 산출물</p>
+                <p class="reference-result">견적서 생성기 UI처럼 바로 쓰는 내부 도구</p>
               </div>
             </article>
             <article>
