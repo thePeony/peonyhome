@@ -15,7 +15,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://everydaypeony.com/" />
-    <meta property="og:image" content="https://everydaypeony.com/assets/peony-hero.png" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/thePeony/peonyhome/main/assets/og-card.png" />
     <meta property="og:locale" content="ko_KR" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="매일피오니 | Design & Development Studio" />
@@ -23,7 +23,7 @@
       name="twitter:description"
       content="판단하고, 설계하고, 직접 만듭니다. 브랜드 아이덴티티, 프로덕트, 자동화, 모션을 넘나드는 서울 기반 1인 스튜디오."
     />
-    <meta name="twitter:image" content="https://everydaypeony.com/assets/peony-hero.png" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/thePeony/peonyhome/main/assets/og-card.png" />
     <meta name="theme-color" content="#f7f1e8" />
     <meta name="robots" content="index, follow" />
     <script type="application/ld+json">
@@ -33,7 +33,7 @@
         "name": "매일피오니",
         "alternateName": "Everyday Peony",
         "url": "https://everydaypeony.com",
-        "email": "hello@everydaypeony.com",
+        "email": "everydaypeony@gmail.com",
         "founder": { "@type": "Person", "name": "정연주" },
         "address": {
           "@type": "PostalAddress",
@@ -1250,7 +1250,7 @@ h2 {
 }
 
 </style>
-  <!-- tistory upload marker 2026-07-03 10:32 KST -->
+  <!-- tistory upload marker 2026-07-03 15:36 KST -->
   </head>
   <body>
     <a class="skip-link" href="#content">본문으로 건너뛰기</a>
@@ -1519,7 +1519,7 @@ h2 {
               </div>
             </div>
             <div class="contact-info">
-              <p><span>Email</span><a href="mailto:hello@everydaypeony.com">hello@everydaypeony.com</a></p>
+              <p><span>Email</span><a href="mailto:everydaypeony@gmail.com">everydaypeony@gmail.com</a></p>
               <p><span>Location</span>Seoul, Korea</p>
               <p><span>Status</span>신규 프로젝트 문의 환영</p>
               <p><span>Response</span>24-48시간 이내</p>
@@ -1577,7 +1577,7 @@ h2 {
     <script>
       const SITE_META = {
         description: "판단하고, 설계하고, 직접 만듭니다. 브랜드 아이덴티티, 프로덕트, 자동화, 모션을 넘나드는 서울 기반 1인 스튜디오.",
-        image: "https://everydaypeony.com/assets/peony-hero.png"
+        image: "https://raw.githubusercontent.com/thePeony/peonyhome/main/assets/og-card.png"
       };
 
       function upsertMeta(selector, attrName, attrValue, content) {
@@ -1702,11 +1702,11 @@ h2 {
         const body = encodeURIComponent(`이름: ${nm}\n이메일: ${em}\n유형: ${tp}\n\n${msg}`);
         setTimeout(() => {
           try {
-            window.location.href = `mailto:hello@everydaypeony.com?subject=${sub}&body=${body}`;
+            window.location.href = `mailto:everydaypeony@gmail.com?subject=${sub}&body=${body}`;
           } catch (error) {
             document.getElementById("cForm").style.display = "grid";
             document.getElementById("formDone").classList.remove("show");
-            document.getElementById("formError").textContent = "전송에 실패했어요. hello@everydaypeony.com으로 직접 보내주세요.";
+            document.getElementById("formError").textContent = "전송에 실패했어요. everydaypeony@gmail.com으로 직접 보내주세요.";
           }
         }, 900);
       });
