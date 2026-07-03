@@ -858,11 +858,24 @@ h2 {
 .tistory-toolbar,
 .tt_toolbar,
 .btn_tool,
+.btn_menu_toolbar,
+.btn_subscription,
+.wrap_toolbar,
+.area_toolbar,
+.toolbar_layer,
+.layer_tool,
+.subscription_layer,
+.subscription-button,
 .subscription_wrap,
 .subscribe-wrap,
 .blog-subscribe,
-.revenue_unit_wrap {
+.revenue_unit_wrap,
+[class*="subscription"],
+[class*="Subscription"],
+[data-blog-id="3036304"] {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .overlay {
