@@ -192,6 +192,16 @@ h2 em {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
+.hero-lead {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 1.4rem 0 0;
+  color: var(--body);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  line-height: 1.65;
+}
+
 .hero-pills {
   display: flex;
   flex-wrap: wrap;
@@ -211,10 +221,12 @@ h2 em {
 }
 
 .cta-row {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
 }
 
 .btn {
@@ -379,8 +391,8 @@ h2 {
 
 .x-labels {
   display: grid;
-  grid-template-columns: 100px repeat(4, minmax(210px, 1fr));
-  min-width: 940px;
+  grid-template-columns: 100px repeat(5, minmax(190px, 1fr));
+  min-width: 1050px;
 }
 
 .x-label {
@@ -407,7 +419,7 @@ h2 {
 .grid-rows {
   display: flex;
   flex-direction: column;
-  min-width: 940px;
+  min-width: 1050px;
 }
 
 .work-section .container {
@@ -416,7 +428,7 @@ h2 {
 
 .grid-row {
   display: grid;
-  grid-template-columns: 100px repeat(4, minmax(210px, 1fr));
+  grid-template-columns: 100px repeat(5, minmax(190px, 1fr));
   border-bottom: 1px solid var(--line);
 }
 
@@ -575,7 +587,7 @@ h2 {
 
 .reference-list article {
   display: grid;
-  grid-template-columns: 150px minmax(220px, 0.65fr) minmax(0, 1fr);
+  grid-template-columns: 140px minmax(210px, 0.6fr) minmax(0, 1fr) minmax(150px, 0.45fr);
   gap: 1.4rem;
   align-items: center;
   border-bottom: 1px solid var(--line);
@@ -606,6 +618,38 @@ h2 {
 
 .open-reference:hover {
   text-decoration: underline;
+}
+
+.reference-proof {
+  display: grid;
+  gap: 0.55rem;
+  align-self: stretch;
+}
+
+.reference-thumb {
+  min-height: 74px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 16%, transparent), transparent 42%),
+    var(--paper);
+}
+
+.reference-proof.is-empty .reference-thumb {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      color-mix(in srgb, var(--line) 70%, transparent) 0 1px,
+      transparent 1px 8px
+    ),
+    var(--paper);
+}
+
+.reference-result {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .stats {
@@ -696,6 +740,15 @@ h2 {
   resize: vertical;
 }
 
+.contact-form .hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .submit-btn {
   display: inline-flex;
   align-items: center;
@@ -713,6 +766,14 @@ h2 {
 
 .submit-btn:hover {
   background: var(--accent);
+}
+
+.form-error {
+  min-height: 1.4em;
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .form-done {
@@ -789,6 +850,19 @@ h2 {
   display: block;
   color: var(--soft);
   font-size: 0.85rem;
+}
+
+#tistoryToolbar,
+#tistorytoolbarid,
+.tistoryToolbar,
+.tistory-toolbar,
+.tt_toolbar,
+.btn_tool,
+.subscription_wrap,
+.subscribe-wrap,
+.blog-subscribe,
+.revenue_unit_wrap {
+  display: none !important;
 }
 
 .overlay {
